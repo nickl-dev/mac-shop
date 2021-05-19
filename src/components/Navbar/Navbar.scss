@@ -1,0 +1,18 @@
+@import '../../styles/global.scss';
+
+
+.navbar {
+  background: #333333;
+  height: 48px;
+  @include sm {
+    height: 44px;
+  }
+
+  &__logo {
+    color: #f5f5f7;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      color: #fafafa;
+    }
+  }
+}
