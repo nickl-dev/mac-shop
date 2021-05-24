@@ -4,6 +4,9 @@
 .navbar {
   background: #333333;
   height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @include sm {
     height: 44px;
   }

@@ -1,0 +1,25 @@
+$sfPro: 'SF-Pro';
+
+@font-face {
+  font-family: $sfPro;
+  src: url('../assets/fonts/sf-pro/sf-pro-display-light.otf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: $sfPro;
+  src: url('../assets/fonts/sf-pro/sf-pro.otf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: $sfPro;
+  src: url('../assets/fonts/sf-pro/sf-pro-display-medium.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: $sfPro;
+  src: url('../assets/fonts/sf-pro/sf-pro-display-heavy.otf');
+  font-weight: 500;
+}

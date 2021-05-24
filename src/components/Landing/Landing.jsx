@@ -1,13 +1,12 @@
 import React from 'react';
-import ProductBar from './ProductBar/ProductBar.jsx'
+import ItemBar from './ItemBar/ItemBar.jsx'
 
 const Landing = () => {
   return (
     <div className="landing">
-    <ProductBar/>
+    <ItemBar />
     </div>
   )
 }
-
 
 export default Landing;
