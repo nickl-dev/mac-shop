@@ -12,6 +12,7 @@ import MacMini from 'assets/icons/mac-mini.svg'
 
 const ItemBar = () => {
 
+  // Items for ItemBar
   const items = [
     {
       icon: MacBookAir,
