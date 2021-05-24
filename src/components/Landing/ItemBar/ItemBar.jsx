@@ -1,5 +1,7 @@
 import React from 'react'
-import './ProductBar.scss'
+import './ItemBar.scss'
+
+// Icons
 import MacBookAir from 'assets/icons/macbook-air.svg'
 import MacBookPro13 from 'assets/icons/macbook-pro-13.svg'
 import MacBookPro16 from 'assets/icons/macbook-pro-16.svg'
@@ -8,9 +10,9 @@ import iMac27 from 'assets/icons/imac-27.svg'
 import MacPro from 'assets/icons/mac-pro.svg'
 import MacMini from 'assets/icons/mac-mini.svg'
 
-const ProductBar = () => {
+const ItemBar = () => {
 
-  const products = [
+  const items = [
     {
       icon: MacBookAir,
       label: 'MacBook Air'
@@ -34,22 +36,25 @@ const ProductBar = () => {
       label: 'Mac mini'
     }
   ]
-  return (
-    <div className="product-bar">
-      <ul className="product-bar__wrapper">
-        {products.map((product, index) => {
-          return (
-            <li key={product.index} className="product">
-              <img src={product.icon} className="product__icon" />
-              <p className="product__label">{product.label}</p>
-            </li>
-          )
-        })}
-      </ul>
 
-    </div>
+  return (
+    <nav className="item-nav">
+      <div className="item-nav__wrapper">
+        <ul className="item-nav__items">
+          {items.map((item, index) => {
+            return (
+              <li key={item.index} className="item">
+                <img src={item.icon} className="item__icon" alt={item.label} />
+                <p className="item__label">{item.label}</p>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
+    </nav>
+
   )
 }
 
 
-export default ProductBar;
+export default ItemBar;
