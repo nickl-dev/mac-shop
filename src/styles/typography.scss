@@ -23,3 +23,9 @@ $sfPro: 'SF-Pro';
   src: url('../assets/fonts/sf-pro/sf-pro-display-heavy.otf');
   font-weight: 500;
 }
+
+@font-face {
+  font-family: $sfPro;
+  src: url('../assets/fonts/sf-pro/sf-pro-text.otf');
+  font-style: text;
+}

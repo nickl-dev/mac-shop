@@ -1,17 +1,15 @@
 @import 'styles/global.scss';
 
 .item-nav {
-  height: 100px;
   background: rgba(245,245,247,0.6);
-  padding: 8px 4px;
-  border: 1px solid black;
+  padding-bottom: 20px;
 
   &__items {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
     overflow-x: auto;
-    // margin: 0 20px;
+    padding: 10px 0;
 
     @include sm {
       justify-content: center;
@@ -19,28 +17,11 @@
 
     /* width */
     &::-webkit-scrollbar {
-      height: 2px;
-      border-radius: 10px;
-    }
-
-    /* Track */
-    &::-webkit-scrollbar-track {
-      background: rgba($black-100, 0.5);
-    }
-
-    /* Handle */
-    &::-webkit-scrollbar-thumb {
-      background: $black-100;
-    }
-
-    /* Handle on hover */
-    &::-webkit-scrollbar-thumb:hover {
-      background: black;
+      display: none;
     }
 
     .item {
       padding: 0 20px;
-      height: 100px;
       list-style-type: none;
       text-align: center;
 
@@ -49,7 +30,8 @@
       }
 
       &__label {
-        font-size: 12px;
+        @include itemLabel;
+        min-width: 100px;
       }
     }
   }
