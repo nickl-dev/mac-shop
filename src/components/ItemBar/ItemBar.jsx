@@ -1,6 +1,9 @@
 import React from 'react'
 import './ItemBar.scss'
 
+// Components
+import ItemBarItem from 'components/ItemBarItem/ItemBarItem'
+
 // Icons
 import MacBookAir from 'assets/icons/macbook-air.svg'
 import MacBookPro13 from 'assets/icons/macbook-pro-13.svg'
@@ -44,16 +47,16 @@ const ItemBar = () => {
         <ul className="item-nav__items">
           {items.map((item, index) => {
             return (
-              <li key={item.index} className="item">
-                <img src={item.icon} className="item__icon" alt={item.label} />
-                <p className="item__label">{item.label}</p>
-              </li>
+              <ItemBarItem
+                key={index}
+                icon={item.icon}
+                label={item.label}
+              />
             )
           })}
         </ul>
       </div>
     </nav>
-
   )
 }
 

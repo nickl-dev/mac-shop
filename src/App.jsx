@@ -5,8 +5,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
 import './styles/global.scss'
-import Landing from './components/Landing/Landing.jsx'
-import Navbar from './components/Navbar/Navbar.jsx'
+import Landing from 'pages/Landing/Landing'
+import Navbar from 'components/Navbar/Navbar.jsx'
 // import { Counter } from './features/counter/Counter';
 
 library.add(fab)
