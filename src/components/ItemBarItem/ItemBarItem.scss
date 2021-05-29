@@ -1,0 +1,16 @@
+@import 'styles/global.scss';
+
+.item {
+  padding: 0 20px;
+  list-style-type: none;
+  text-align: center;
+
+  &__icon {
+    height: 54px;
+  }
+
+  &__label {
+    @include itemLabel;
+    min-width: 100px;
+  }
+}
