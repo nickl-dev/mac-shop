@@ -1,14 +1,14 @@
-$sm: 600px;
-$md: 900px;
+$md: 768px;
+$lg: 1070px;
 
-@mixin sm {
-  @media (min-width: $sm) {
+@mixin md {
+  @media (min-width: $md) {
     @content;
   }
 }
 
-@mixin md {
-  @media (min-width: $md) {
+@mixin lg {
+  @media (min-width: $lg) {
     @content;
   }
 }

@@ -2,3 +2,13 @@
   font-size: 12px;
   font-style: text;
 }
+
+@mixin buyButton {
+  background: $blue-50;
+  padding: 8px 16px;
+  border-radius: 980px;
+  color: $white-50;
+  border: none;
+  font-size: 17px;
+  margin: 8px 0 14px 0;
+}

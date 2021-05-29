@@ -1,0 +1,121 @@
+@import 'styles/global.scss';
+
+.hero {
+  padding: 55px 0 110px 0;
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__new {
+    font-size: 17px;
+    color: $red-50;
+    font-style: text;
+    line-height: 1.47059;
+  }
+
+  &__heading {
+    font-size: 32px;
+    line-height: 1.07143;
+    font-weight: 400;
+    letter-spacing: -3px;
+
+    @include md {
+      font-size: 40px;
+    }
+
+    @include lg {
+      font-size: 56px;
+    }
+  }
+
+  &__hello {
+    margin: 8px 0 6px 0;
+    font-size: 21px;
+  }
+
+  &__price {
+    font-size: 17px;
+  }
+
+  &__learn-more {
+    font-size: 17px;
+    color: $blue-100;
+    line-height: 1.47059;
+  }
+
+  .mac__image {
+    width: 322px;
+    height: 472px;
+    margin: 20px auto 0 auto;
+    background-image: url('/assets/images/hero_imac_24__small.jpg');
+    background-position: center;
+    background-size: cover;
+
+    @include md {
+      background-image: url('/assets/images/hero_imac_24__large.jpg');
+      width: 738px;
+      height: 308px;
+      margin-top: 27px
+    }
+
+    @include lg {
+      width: 1070px;
+      height: 446px;
+      margin-top: 32px;
+    }
+  }
+}
+
+.cta {
+  @include buyButton
+}
+
+.compare {
+  background: $white-100;
+  padding-top: 86px;
+  text-align: center;
+
+  &__wrapper {
+    width: 87.5%;
+    margin: 0 auto;
+
+    @include md {
+      width: 722px;
+    }
+
+    @include lg {
+      width: 980px;
+    }
+  }
+
+  &__heading {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.125;
+    letter-spacing: -1px;
+
+    @include md {
+      font-size: 40px;
+    }
+
+    @include lg {
+      font-size: 48px;
+    }
+  }
+
+  &__cta {
+    margin: 30px 0 41px 0;
+    display: inline-block;
+  }
+
+  &__options {
+    margin: 30px 0 62px 0;
+    border-bottom: 1px solid #d2d2d7;
+  }
+
+  &__option {
+    font-size: 17px;
+    padding: 11px 0 15px 0;
+  }
+}
