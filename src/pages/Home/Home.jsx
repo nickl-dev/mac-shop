@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 // Redux
 import { connect } from 'react-redux'
 // import { addToBag } from 'redux/actions/bagActions'
@@ -51,26 +49,58 @@ class Home extends Component {
             <p className="hero__price">From $1599</p>
             <button className="cta">Buy</button>
             <p className="hero__learn-more">
-              Learn More >
+              Learn More
             </p>
           </div>
 
-          <figure className="mac__image" />
+          <figure className="hero__image" />
         </div>
 
-        <section className="compare">
-          <div className="compare__wrapper">
-            <h2 className="compare__heading">Which Mac is right for you?</h2>
-          
-            <div className="compare__options">
-              <span className="compare__option">Notebook</span>
-              <span className="compare__option">Desktop</span>
+        <section className="what-makes">
+            <h2 className="what-makes__heading">What makes a Mac a Mac?</h2>
+
+          <div className="what-makes__grid">
+
+            <div className="tile tile-1">
+              <div className="tile__text">
+                <p className="tile__heading">Why Mac</p>
+                  <p className="tile__promo">
+                  Incredible&nbsp;power.
+                  <br />
+                  Incredibly&nbsp;simple.
+                </p>
+              </div>
             </div>
 
+            <div className="tile tile-2">
+              <div className="tile__text">
+                <p className="tile__heading">macOS Big Sur</p>
+                <p className="tile__promo">Doing it all, in all new ways</p>
+              </div>
+            </div>
+
+            <div className="tile tile-3">
+              <div className="tile__text">
+                <p className="tile__heading">Continuity</p>
+                <p className="tile__promo">
+                  All&nbsp;your&nbsp;devices.
+                  <br />
+                  One&nbsp;seamless&nbsp;experience.
+                </p>
+              </div>
+            </div>
+
+            <div className="tile tile-4">
+              <div className="tile__text">
+                <p className="tile__heading">iCloud</p>
+                <p className="tile__promo">
+                  Store&nbsp;it&nbsp;all.&nbsp;Access&nbsp;it&nbsp;anywhere.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </div>
-
     )
   }
 }
