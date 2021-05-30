@@ -8,13 +8,18 @@
   justify-content: center;
   align-items: center;
 
-  @include sm {
+  @include md {
     height: 44px;
   }
 
   &__logo {
     color: $white-50;
     transition: 0.3s ease-in-out;
+    background-image: url('/assets/icons/apple-icon.svg');
+    width: 16px;
+    background-size: 16px 44px;
+    background-position: center;
+    background-repeat: no-repeat;
     &:hover {
       color: $white-100;
     }
