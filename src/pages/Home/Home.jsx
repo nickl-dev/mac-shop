@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 // Redux
 import { connect } from 'react-redux'
-// import { addToBag } from 'redux/actions/bagActions'
 
 // Stylesheet
 import './Home.scss'
@@ -13,28 +12,7 @@ import ItemBar from 'components/ItemBar/ItemBar'
 
 class Home extends Component {
 
-  // handleClick = (id) => {
-  //   this.props.addToBag(id)
-  // }
-
   render() {
-
-    // let itemList = this.props.items.map(item=>{
-    //   return(
-    //     <div className="" style={{width:'200px',margin:'0 auto'}} key={item.id}>
-    //       <div className="">
-    //         <img src={item.img} alt={item.title}/>
-    //         <span className="">{item.title}</span>
-    //         <span to="/" className=""></span>
-    //       </div>
-    //
-    //       <div className="card-content">
-    //         <p>{item.desc}</p>
-    //         <p><b>${item.price}</b></p>
-    //       </div>
-    //     </div>
-    //   )
-    // })
 
     return (
 
@@ -47,10 +25,8 @@ class Home extends Component {
             <h1 className="hero__heading">iMac</h1>
             <p className="hero__hello">Say Hello.</p>
             <p className="hero__price">From $1599</p>
-            <button className="cta">Buy</button>
-            <p className="hero__learn-more">
-              Learn More
-            </p>
+            <Link to="/shop" className="cta">Buy</Link>
+
           </div>
 
           <figure className="hero__image" />
@@ -83,9 +59,9 @@ class Home extends Component {
               <div className="tile__text">
                 <p className="tile__heading">Continuity</p>
                 <p className="tile__promo">
-                  All&nbsp;your&nbsp;devices.
+                  All your devices.
                   <br />
-                  One&nbsp;seamless&nbsp;experience.
+                  One seamless experience.
                 </p>
               </div>
             </div>
@@ -94,7 +70,7 @@ class Home extends Component {
               <div className="tile__text">
                 <p className="tile__heading">iCloud</p>
                 <p className="tile__promo">
-                  Store&nbsp;it&nbsp;all.&nbsp;Access&nbsp;it&nbsp;anywhere.
+                  Store it all. Access it anywhere.
                 </p>
               </div>
             </div>
@@ -105,19 +81,4 @@ class Home extends Component {
   }
 }
 
-// const mapStateToProps = (state) => {
-//   return {
-//     items: state.items
-//   }
-// }
-
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     addToBag: (id) => {
-//       dispatch(addToBag(id))
-//     }
-//   }
-// }
-
-export default Home
-// connect(mapStateToProps, mapDispatchToProps)(Home)
+export default Home;
