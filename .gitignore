@@ -18,6 +18,8 @@
 .env.test.local
 .env.production.local
 /TODO.md
+/pull_request_template.md
+
 
 npm-debug.log*
 yarn-debug.log*
