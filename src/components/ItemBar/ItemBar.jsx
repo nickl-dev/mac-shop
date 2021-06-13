@@ -6,8 +6,8 @@ import ItemBarItem from 'components/ItemBarItem/ItemBarItem'
 
 // Icons
 import MacBookAir from 'assets/icons/macbook-air.svg'
-import MacBookPro from 'assets/icons/macbook-pro-16.svg'
-import iMac from 'assets/icons/imac-24.svg'
+import MacBookPro from 'assets/icons/macbook-pro.svg'
+import iMac from 'assets/icons/imac.svg'
 
 const ItemBar = () => {
 
