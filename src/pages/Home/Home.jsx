@@ -44,7 +44,7 @@ const Home = () => {
             <div className="tile">
               <div className="tile__text">
                 <p className="tile__heading">macOS Big Sur</p>
-                <p className="tile__promo">Doing it all, in all new ways</p>
+                <p className="tile__promo">Doing it all,<br/>in all new ways.</p>
               </div>
             </div>
 

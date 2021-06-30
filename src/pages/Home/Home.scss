@@ -104,12 +104,23 @@
   &__grid {
     margin-top: 44px;
 
+    @include md {
+      padding: 0 20px;
+      display: grid;
+    }
+
     @include lg {
       margin-top: 80px;
     }
 
     .tile {
       margin-bottom: 15px;
+
+       @include md {
+         margin: 0;
+         max-width: 400px;
+       }
+
       height: 400px;
       // @include flex(center, center);
 
@@ -128,8 +139,8 @@
 
       &:nth-child(2) {
         background-image: url('/assets/images/big-sur.jpg');
-        background-position: center;
-        background-size: cover;
+        background-position-x: center;
+        background-size: 734px 400px;
         color: $white-100;
         @include flex(center, center);
       }
@@ -137,14 +148,14 @@
       &:nth-child(3) {
         background-image: url('/assets/images/continuity.jpg');
         background-position: bottom;
-        background-size: 400px;
+        background-size: 450px;
         background-position-y: 200px;
       }
 
       &:nth-child(4) {
         background-image: url('/assets/images/security.jpg');
         background-position: bottom;
-        background-size: 300px;
+        background-size: 290px;
         background-position-y: 200px;
       }
 
