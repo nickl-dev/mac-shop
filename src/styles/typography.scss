@@ -20,12 +20,22 @@ $sfPro: 'SF-Pro';
 
 @font-face {
   font-family: $sfPro;
-  src: url('../assets/fonts/sf-pro/sf-pro-display-heavy.otf');
+  src: url('../assets/fonts/sf-pro/sf-pro-display-semibold.otf');
   font-weight: 500;
+}
+
+@font-face {
+  font-family: $sfPro;
+  src: url('../assets/fonts/sf-pro/sf-pro-display-heavy.otf');
+  font-weight: 600;
 }
 
 @font-face {
   font-family: $sfPro;
   src: url('../assets/fonts/sf-pro/sf-pro-text.otf');
   font-style: text;
+}
+
+@mixin fontWeight($fw) {
+  font-weight: $fw
 }

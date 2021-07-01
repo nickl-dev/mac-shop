@@ -2,18 +2,13 @@
 
 .item-nav {
   background: rgba(245,245,247,0.6);
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 
   &__items {
-    display: flex;
-    justify-content: flex-start;
+    @include flex(center, center);
     align-items: baseline;
     overflow-x: auto;
     padding: 10px 0;
-
-    @include md {
-      justify-content: center;
-    }
 
     /* width */
     &::-webkit-scrollbar {

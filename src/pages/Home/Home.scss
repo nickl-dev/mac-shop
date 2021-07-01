@@ -3,10 +3,6 @@
 .hero {
   padding: 55px 0 110px 0;
 
-  &__wrapper {
-    text-align: center;
-  }
-
   &__new {
     font-size: 17px;
     color: $red-50;
@@ -17,8 +13,8 @@
   &__heading {
     font-size: 32px;
     line-height: 1.07143;
-    font-weight: 400;
-    letter-spacing: -3px;
+    letter-spacing: -1px;
+    @include fontWeight(500);
 
     @include md {
       font-size: 40px;
@@ -32,6 +28,14 @@
   &__hello {
     margin: 8px 0 6px 0;
     font-size: 21px;
+
+    @include md {
+      font-size: 24px;
+    }
+
+    @include lg {
+      font-size: 28px;
+    }
   }
 
   &__price {
@@ -73,7 +77,6 @@
 
 .what-makes {
   padding-top: 50px;
-  text-align: center;
 
   @include md {
     padding-top: 93px;
@@ -85,9 +88,9 @@
 
   &__heading {
     font-size: 32px;
-    font-weight: 400;
     line-height: 1.125;
     letter-spacing: -1px;
+    @include fontWeight(500);
 
     @include md {
       font-size: 56px;
@@ -101,25 +104,105 @@
   &__grid {
     margin-top: 44px;
 
+    @include md {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
     @include lg {
       margin-top: 80px;
+      max-width: 100%;
     }
 
     .tile {
       margin-bottom: 15px;
+      height: 420px;
 
-      &:not(.tile-2) {
+       @include md {
+         margin: 10px;
+         width: 360px;
+         height: 500px;
+         padding: 28px;
+       }
+
+       @include lg {
+         margin: 15px;
+         height: 600px;
+         width: 47%;
+         max-width: 675px;
+       }
+
+      &:not(:nth-child(2)) {
         padding-top: 45px;
         background: $white-100;
+        background-position: bottom;
+        background-repeat: no-repeat;
+
+        @include md {
+          padding-top: 65px;
+        }
+      }
+
+      &:first-child {
+        background-image: url('/assets/images/why-mac.jpg');
+        background-size: 280px 177px;
+        background-position-y: 180px;
+
+        @include md {
+          background-position-y: 240px;
+        }
+
+        @include lg {
+          background-size: 459px 289px;
+          background-position-y: 250px;
+        }
       }
 
       &:nth-child(2) {
         background-image: url('/assets/images/big-sur.jpg');
-        background-position: center;
-        background-size: 734px 550px;
-        background-repeat: no-repeat;
-        color: $white-50;
-        height: 550px;
+        background-position-x: center;
+        background-size: 760px 500px;
+        color: $white-100;
+        @include flex(center, center);
+
+        @include lg {
+          background-size: 1600px;
+        }
+      }
+
+      &:nth-child(3) {
+        background-image: url('/assets/images/continuity.jpg');
+        background-size: 450px;
+        background-position-y: 200px;
+        background-position: bottom;
+
+        @include md {
+          background-position-y: 260px;
+        }
+
+        @include lg {
+          background-size: 675px 303px;
+        }
+      }
+
+      &:nth-child(4) {
+        background-image: url('/assets/images/security.jpg');
+        background-position: bottom;
+        background-size: 290px;
+        background-position-y: 200px;
+
+        @include md {
+          background-position-y: 300px;
+        }
+
+        @include lg {
+          background-size: 497px 230px;
+          background-position-y: 290px;
+        }
       }
 
       &__heading {
@@ -134,6 +217,14 @@
       &__promo {
         line-height: 1.125;
         font-size: 32px;
+
+        @include md {
+          font-size: 40px;
+        }
+
+        @include lg {
+          font-size: 48px;
+        }
       }
     }
   }
