@@ -1,6 +1,12 @@
 @import 'styles/global.scss';
 
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1}
+}
+
 .hero {
+  animation: fadeIn 1s;
   padding: 55px 0 110px 0;
 
   &__heading {
