@@ -14,8 +14,9 @@ import Home from 'pages/Home/Home'
 import Buy from 'pages/Buy/Buy'
 import Bag from 'pages/Bag/Bag'
 
-//Components
+// Components
 import Navbar from 'components/Navbar/Navbar.jsx'
+import Footer from 'components/Footer/Footer.jsx'
 
 library.add(fab, faShoppingBag)
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/bag" exact component={Bag} />
         </Switch>
 
+        <Footer/>
       </div>
     </Router>
   )

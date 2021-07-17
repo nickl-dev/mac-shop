@@ -15,12 +15,9 @@ const Home = () => {
 
         <div className="hero">
           <div className="hero__wrapper">
-            <span className="hero__new">New</span>
-            <h1 className="hero__heading">iMac</h1>
-            <p className="hero__hello">Say hello.</p>
-            <p className="hero__price">From $1599</p>
-            <Link to="/shop" className="cta">Buy</Link>
-            <span className="hero__learn-more">Learn more</span>
+            <h1 className="hero__heading">MacShop</h1>
+            <p className="hero__price">From $1299</p>
+            <Link to="/shop" className="hero__cta">Buy</Link>
           </div>
 
           <figure className="hero__image" />

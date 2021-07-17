@@ -3,18 +3,11 @@
 .hero {
   padding: 55px 0 110px 0;
 
-  &__new {
-    font-size: 17px;
-    color: $red-50;
-    font-style: text;
-    line-height: 1.47059;
-  }
-
   &__heading {
     font-size: 32px;
-    line-height: 1.07143;
     letter-spacing: -1px;
     @include fontWeight(500);
+    margin-bottom: 10px;
 
     @include md {
       font-size: 40px;
@@ -25,30 +18,15 @@
     }
   }
 
-  &__hello {
-    margin: 8px 0 6px 0;
-    font-size: 21px;
-
-    @include md {
-      font-size: 24px;
-    }
-
-    @include lg {
-      font-size: 28px;
-    }
-  }
-
   &__price {
     font-size: 17px;
   }
 
-  &__learn-more {
-    font-size: 17px;
-    color: $blue-100;
-    line-height: 1.47059;
+  &__cta {
+    @include ctaButton;
   }
 
-  .hero__image {
+  &__image {
     width: 322px;
     height: 472px;
     margin: 20px auto 0 auto;
@@ -71,9 +49,6 @@
   }
 }
 
-.cta {
-  @include buyButton
-}
 
 .what-makes {
   padding-top: 50px;
@@ -88,7 +63,6 @@
 
   &__heading {
     font-size: 32px;
-    line-height: 1.125;
     letter-spacing: -1px;
     @include fontWeight(500);
 
@@ -215,7 +189,6 @@
       }
 
       &__promo {
-        line-height: 1.125;
         font-size: 32px;
 
         @include md {

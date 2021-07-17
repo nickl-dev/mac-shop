@@ -1,0 +1,26 @@
+@import 'styles/global.scss';
+
+.footer {
+  background-color: $white-50;
+  padding: 0 16px;
+
+  &__logo {
+    color: $black-200;
+    transition: 0.1s ease-in-out;
+    margin-right: 5px;
+
+    &:hover {
+      color: $black-50;
+    }
+  }
+
+  &__content {
+    max-width: 1000px;
+    margin: auto;
+    font-size: 12px;
+  }
+
+  &__header {
+    margin-left: 10px;
+  }
+}
