@@ -7,13 +7,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
 }
 
 body {
   font-family: $sfPro;
   color: $black-50;
   @include fontWeight(500);
+  @include textAlign(center)
 }
 
 a {

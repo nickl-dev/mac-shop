@@ -111,7 +111,7 @@
 
        @include lg {
          margin: 15px;
-         height: 600px;
+         height: 620px;
          width: 47%;
          max-width: 675px;
        }
@@ -158,10 +158,9 @@
         background-image: url('/assets/images/continuity.jpg');
         background-size: 450px;
         background-position-y: 200px;
-        background-position: bottom;
 
         @include md {
-          background-position-y: 260px;
+          background-position-y: 265px;
         }
 
         @include lg {
@@ -196,6 +195,7 @@
 
       &__promo {
         font-size: 32px;
+        line-height: 1;
 
         @include md {
           font-size: 40px;

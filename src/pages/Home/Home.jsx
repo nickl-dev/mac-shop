@@ -14,12 +14,9 @@ const Home = () => {
         <ItemBar />
 
         <div className="hero">
-          <div className="hero__wrapper">
             <h1 className="hero__heading">MacShop</h1>
             <p className="hero__price">From $1299</p>
             <Link to="/shop" className="hero__cta">Buy</Link>
-          </div>
-
           <figure className="hero__image" />
         </div>
 
